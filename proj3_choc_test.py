@@ -9,8 +9,6 @@ class TestBarSearch(unittest.TestCase):
 
     def test_bar_search(self):
         results = process_command('bars ratings top 1')
-        print(type("Chuao"))
-        print(results[0][0])
         self.assertEqual(results[0][0], "Chuao")
 
         results = process_command('bars cocoa bottom 10')
